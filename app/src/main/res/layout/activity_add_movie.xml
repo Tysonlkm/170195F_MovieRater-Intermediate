@@ -1,0 +1,105 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="movierater.it2107.sit.nyp.movierater.add_Movie">
+
+    <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieTitle"/>
+
+    <EditText
+            android:id="@+id/inputMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etMovieTitle"
+            android:inputType="text"/>
+
+    <TextView
+            android:id="@+id/movieDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieDesc"/>
+
+    <EditText
+            android:id="@+id/inputMovieDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etMovieDesc"
+            android:inputType="textMultiLine"/>
+    <TextView
+            android:id="@+id/movieLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieLang"/>
+
+    <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <RadioButton
+                android:id="@+id/english_radiobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eng_lang" android:checked="true"/>
+        <RadioButton
+                android:id="@+id/chinese_radiobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ch_lang"/>
+        <RadioButton
+                android:id="@+id/malay_radiobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_lang"/>
+        <RadioButton
+                android:id="@+id/tamil_radiobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tml_lang"/>
+    </RadioGroup>
+
+    <TextView
+            android:id="@+id/movieRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieRelease"/>
+
+    <EditText
+            android:id="@+id/inputReleaseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/etMovieRelease"
+            android:inputType="date"/>
+
+    <CheckBox
+            android:id="@+id/chkboxMovieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieType"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chkboxMovieVl"
+                android:visibility="gone"
+                android:text="@string/vl"/>
+
+        <CheckBox
+                android:id="@+id/chkboxMovielangUsed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/langUsed"/>
+    </LinearLayout>
+</LinearLayout>
